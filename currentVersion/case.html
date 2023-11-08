@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入css -->
+    <link rel="stylesheet" href="./css/linfengTools.css">
+    <!-- 引入js -->
+    <script src="./js/linfengTools.js"></script>
+    <!-- 引入临时js -->
+    <script src="./js/tmp.js"></script>
+    <title>case</title>
+</head>
+
+<body>
+    <button class="oneBtn">设置cookie</button>
+    <button class="twoBtn">获取cookie</button>
+    <button class="threeBtn">删除cookie</button>
+</body>
+<script>
+    // 标题设置
+    linfeng.titleText()
+    // 检测是否为移动端
+    console.log(linfeng.equipment.move());
+    // 区分Andriod，iphone，ipad
+    console.log(linfeng.equipment.aed());
+    // 色值转换
+    // const res2 = linfeng.color.toHex('rgb(255,255,255,0.5)')
+    // console.log(res2);
+    // const btnOne = document.getElementsByClassName('oneBtn')[0]
+    // btnOne.onclick = () => {
+    //     linfeng.cookie.set("cookie", "publciwkdkdsajukh", 10)
+    //     console.log("成功设置cookie")
+    // }
+    // const btnTwo = document.getElementsByClassName('twoBtn')[0]
+    // btnTwo.onclick = () => {
+    //     const res = linfeng.cookie.get("cookie")
+    //     console.log(res)
+    // }
+    // const btnThree = document.getElementsByClassName('threeBtn')[0]
+    // btnThree.onclick = () =>  {
+    //     linfeng.cookie.del("cookie")
+    // }
+    // const res3 = linfeng.query('id')
+    // console.log(res3);
+    /*
+    // 启用单击浮出文字动画
+    linfeng.animat.floatText(['林风', '666', 'linfeng', 666])
+
+    // 日期格式化
+    const dateTime = linfeng.date(new Date())
+    document.write("页面启动时间：", dateTime)
+
+    // 空值判断
+    const tmpText1 = "  "
+    const tmpArray1 = []
+    const tmp1 = linfeng.null(tmpText1)
+    const tmp2 = linfeng.null(tmpArray1)
+    console.log("字符串" + tmpText1 + "是否为空：", tmp1)
+    console.log("数组", tmpArray1, "是否为空：", tmp2)
+
+    // 类型判断
+    const tmp3 = linfeng.type("asd")
+    console.log("asd的数据类型为：", tmp3);*/
+</script>
+
+</html>
